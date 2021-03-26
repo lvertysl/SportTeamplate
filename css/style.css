@@ -1,77 +1,68 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Roboto:wght@400;700&display=swap");*/
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Bold.woff2') format('woff2'),
-        url('../fonts/Raleway-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Medium.woff2') format('woff2'),
-        url('../fonts/Raleway-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-ExtraBold.woff2') format('woff2'),
-        url('../fonts/Raleway-ExtraBold.woff') format('woff');
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-ExtraBold.woff2") format("woff2"), url("Raleway-ExtraBold.woff") format("woff");
     font-weight: 800;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Regular.woff2') format('woff2'),
-        url('../fonts/Raleway-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-SemiBold.woff2') format('woff2'),
-        url('../fonts/Raleway-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
-        url('../fonts/Roboto-Bold.woff') format('woff');
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("Raleway-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
-        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-SemiBold.woff2") format("woff2"), url("Raleway-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-Medium.woff2") format("woff2"), url("Raleway-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-Regular.woff2") format("woff2"), url("Raleway-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
-/*@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Roboto:wght@400;700&display=swap');*/
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("Roboto-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0%;
+    margin: 0%;
     box-sizing: border-box;
 }
 body {
-    font: 400 19px/1 'Raleway' , Arial, tahoma, verdana, sans-serif;
+    font: 400 19px/1 "Raleway", Arial, tahoma, verdana, sans-seen;
 }
 
 a {
@@ -81,25 +72,13 @@ a {
 ul {
     list-style: none;
 }
-
-img {
-    max-width: 100%;
-}
-
-table {
-    border-collapse: collapse;
-}
-
-.clearfix:after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
 input {
     outline: none;
 }
 
+img {
+    max-width: 100%;
+}
 .wrapper {
     overflow: hidden;
 }
@@ -109,7 +88,134 @@ input {
     padding: 0 15px;
     margin: 0 auto;
 }
-.main{
+
+.header .container {
+    max-width: 1220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    background-color: #000;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+}
+.navigation__item {
+    margin: 0 42px;
+}
+
+.navigation a {
+    color: #00c0ff;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(../images/baner.jpg);
-    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: 70%;
+    background-size: cover;
+    height: 975px;
+}
+
+.main .container {
+    max-width: 725px;
+    margin-top: 380px;
+}
+
+.promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promo img {
+    margin-bottom: 65px;
+}
+
+.promo p {
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.main button {
+    width: 260px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 25px;
+    font-family: Roboto, sans-serif;
+    color: #3ea2d8;
+    font-weight: bold;
+    cursor: pointer;
+    outline: 0;
+}
+.mobile-button {
+    
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.mobile-button span {
+display: block;
+    height: 4px;
+    width:100% ;
+    background:#3ea2d8; 
+    z-index: 5;
+}
+.mobile-button:before,
+.mobile-button:after {
+    content: '';
+    height: 4px;
+    width: 100%;
+    background:#3ea2d8;
+    position: absolute;
+    left: 0;
+    top: 0%;
+
+}
+.mobile-button:after {
+    top: auto;
+    bottom: 0;
+}
+
+@media (max-width: 800px) { 
+    .mobile-button {
+    display: inline-flex;
+
+    }
+    .navigation {
+        display: none;
+    }
+    .header{
+        top: 0;
+    }
+    .header .container{
+        padding: 8px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+
+    }
+
+@media (max-width: 510px) {
+    .navigation {
+        display: none;
+    }
 }
